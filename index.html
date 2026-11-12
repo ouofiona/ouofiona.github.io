@@ -902,7 +902,7 @@ function camera(){
  }
  downloadDialog.addEventListener('close',()=>{
   if(downloadDialog.returnValue==='yes'&&selectedPhoto){
-   const a=create('a');a.download='frutiger-aero-photo-'+selectedPhoto.number+'.png';a.href=selectedPhoto.shot.toDataURL('image/png');
+   const a=create('a');a.download='ouopic.png';a.href=selectedPhoto.shot.toDataURL('image/png');
    body.append(a);a.click();a.remove();
   }
   selectedPhoto=null;
